@@ -13,7 +13,6 @@ public class VentaRepositoryImpl implements VentaRepository{
 
     @Override
     public void insert(Venta venta){
-        venta.setTotal(venta.getpUnit()* venta.getCantidad());
         itemsVenta.add(venta);
     }
 

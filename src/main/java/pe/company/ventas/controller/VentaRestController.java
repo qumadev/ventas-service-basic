@@ -46,7 +46,7 @@ public class VentaRestController {
             venta.setProducto(ventaModified.getProducto()==null ? venta.getProducto() : ventaModified.getProducto());
             venta.setpUnit(ventaModified.getpUnit()==0.0 ? venta.getpUnit():ventaModified.getpUnit());
             venta.setCantidad(ventaModified.getCantidad()== 0 ? venta.getCantidad():ventaModified.getCantidad());
-            venta.setTotal(venta.getpUnit()*venta.getCantidad());
+            venta.setTotal(venta.getTotal());
             ventaService.update(venta);
             return new ResponseEntity<>("Venta actualizada",HttpStatus.OK);
         }
