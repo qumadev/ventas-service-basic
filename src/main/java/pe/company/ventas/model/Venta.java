@@ -82,7 +82,7 @@ public class Venta implements Serializable{
         return total;
     }
 
-    public void setTotal(double total) {
+    public void setTotal() {
         this.total = pUnit*cantidad;
     }
 }

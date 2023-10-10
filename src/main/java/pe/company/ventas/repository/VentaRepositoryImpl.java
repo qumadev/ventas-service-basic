@@ -13,6 +13,7 @@ public class VentaRepositoryImpl implements VentaRepository{
 
     @Override
     public void insert(Venta venta){
+        venta.setTotal();
         itemsVenta.add(venta);
     }
 
